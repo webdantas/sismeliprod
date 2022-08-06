@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'none';
+           style-src 'self' data: http://localhost:3000;
+           script-src 'self' blob: data: http://localhost:3000;"
+/>
+  <title>My Meli Application</title>
+</head>
+<body>
+  <h1>Welcome to your own new MeliApplication!</h1>
+  <form action="/login" method="POST">
+    <label for="password">Senha:</label>
+    <input type="password" name="password" id="password" />
+    <button type="submit">Let's begin!</button>
+  </form>
+</body>
+</html>
