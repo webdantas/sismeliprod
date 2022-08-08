@@ -46,8 +46,9 @@ app.post('/login', (req, res) => {
   }
 });
 
-app.get('/home', validateToken, async (req, res) => {
+app.get('/home', async (req, res) => {
   try {
+    console.log('entrou home');
     const meliObject = new meli.Meli(CLIENT_ID, CLIENT_SECRET, res.locals.access_token);
     const user = await meli_get(meliObject, '/users/me');
     const currencies = await meli_get(meliObject, '/currencies');
