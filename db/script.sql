@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS `sismeliprod`;
 USE sismeliprod;
 
-CREATE TABLE IF NOT EXISTS `sismeliprod`.`sismeliprod_products` (
+CREATE TABLE IF NOT EXISTS `sismeliprod`.`products` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `category_id` INT NOT NULL,
     `price` decimal(10, 2),
@@ -18,6 +18,6 @@ CREATE TABLE IF NOT EXISTS `sismeliprod`.`sismeliprod_products` (
     PRIMARY KEY (`id`)
   );
 
-  INSERT INTO sismeliprod_products VALUE(0, 1, 100, 'ARS', 10, 'buy_it_now', 'auction', 'new', 'description', 'tags', 'pictures', '2019-01-01 00:00:00', '2019-01-01 00:00:00');
+  INSERT INTO products VALUE(0, 1, 100, 'ARS', 10, 'buy_it_now', 'auction', 'new', 'description', 'tags', 'pictures', '2019-01-01 00:00:00', '2019-01-01 00:00:00');
 
-  INSERT INTO sismeliprod_products VALUE(0, 1, 100, 'BCARS', 10, 'buy_it_now', 'auction', 'new', 'description', 'tags', 'pictures', '2019-01-01 00:00:00', '2019-01-01 00:00:00');
+  INSERT INTO products VALUE(0, 1, 100, 'BCARS', 10, 'buy_it_now', 'auction', 'new', 'description', 'tags', 'pictures', '2019-01-01 00:00:00', '2019-01-01 00:00:00');

@@ -64,7 +64,7 @@ app.get('/home', async (req, res) => {
   }
 });
 
-app.post('/post', validateToken, upload.single('picture'), async (req, res) => {
+app.post('/post', upload.single('picture'), async (req, res) => {
   try {
     const meliObject = new meli.Meli(CLIENT_ID, CLIENT_SECRET, res.locals.access_token);
     const user = await meli_get(meliObject, '/users/me');
